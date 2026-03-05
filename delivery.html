@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        * {
+            color: black;
+            font-weight: 900;
+        }
+        input[type="select"], input[type="checkbox"], input[type="button"], input[type="textbox"] {
+            /* margin: 20px; */
+        }
+        div {
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px;
+            clear: left;
+            border-radius: 20px;
+        }
+        .main {
+            width: 50%;
+            margin: 0 auto;
+            background-color: blanchedalmond;
+            background-color: white;
+            background-image: url(assets/images/ceo.jpeg);
+            background-position:top;
+            background-color: white;
+            /* padding-top: 10px; */
+            background-repeat: no-repeat;
+            
+        }
+        button {
+            text-align: center;
+            border-radius: 10px;
+        }
+        .heading {
+            color:cadetblue;
+            /* color: black; */
+            color:darkgreen
+
+
+        }
+        .notice {
+            font-size: 12px;
+            /* line-height: 0.2rem; */
+        }
+        .exp {
+            /* line-height: 0.2rem; */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="heading">Alonge Logistics Ltd Booking System</h1>
+      <form action="">
+        <div>
+            <label for="destination">Destination</label>
+        <select name="destination" id="destinationZone">
+          <option value="" disabled="disabled">Select your destination</option>
+          <option value="Lagos">Lagos</option>
+          <option value="Ibadan">Ibadan</option>
+          <option value="Abeokuta">Abeokuta</option>
+        </select>
+        <label for="weight">Weight</label>
+        <input type="number" id="weight" />
+        </div>
+        <!-- <div>
+            <label for="weight">Weight</label>
+        <input type="number" id="weight" />
+        </div> -->
+        <div>
+            <input type="checkbox" id="expressDelivery" />
+        <label for="" class="exp">Do you want Express Delivery ?</label>
+        <span class="notice">50% surcharge applies</span>
+        </div>
+        <input type="button" id="button" value="Calculate fare" />
+      </form>
+
+      <p id="details"></p>
+
+      <script type="text/javascript" src="delivery.js"></script>
+    </div>
+  </body>
+</html>
